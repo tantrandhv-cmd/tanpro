@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TânPro - Portfolio cá nhân của lập trình viên và nhà phát triển web sáng tạo." />
-    <title>TânPro | Fullstack Developer & Creator</title>
+    <meta
+      name="description"
+      content="TanEnglish - Nền tảng học tiếng Anh chuyên nghiệp, luyện thi IELTS, TOEIC và giao tiếp chuẩn bản xứ cùng lộ trình cá nhân hóa."
+    />
+    <title>TanEnglish | Học Tiếng Anh Trực Tuyến Chuyên Nghiệp</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +18,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Background Ambient Glow -->
+    <!-- Ambient Glow Backgrounds -->
     <div class="ambient-glow glow-1"></div>
     <div class="ambient-glow glow-2"></div>
 
@@ -23,19 +26,21 @@
     <header>
       <div class="container nav-container">
         <a href="#home" class="logo">
-          <span>⚡ TânPro</span>
+          <span class="logo-badge">PRO</span>
+          <span>TanEnglish</span>
         </a>
 
         <ul class="nav-links">
           <li><a href="#home" class="active">Trang chủ</a></li>
-          <li><a href="#services">Dịch vụ</a></li>
-          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#methods">Phương pháp</a></li>
+          <li><a href="#courses">Khóa học</a></li>
+          <li><a href="#quiz">Luyện tập</a></li>
           <li><a href="#skills">Kỹ năng</a></li>
-          <li><a href="#contact">Liên hệ</a></li>
+          <li><a href="#register">Đăng ký học</a></li>
         </ul>
 
         <div class="nav-actions">
-          <a href="#contact" class="btn btn-primary">Hợp tác ngay</a>
+          <a href="#register" class="btn btn-primary">Học Thử Miễn Phí 🚀</a>
           <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">☰</button>
         </div>
       </div>
@@ -46,254 +51,305 @@
       <div class="container hero-grid">
         <div class="hero-content">
           <div class="badge">
-            <span class="badge-dot"></span> Sẵn sàng cho dự án mới
+            <span class="badge-dot"></span> Khóa học chuẩn Cambridge & Oxford 2026
           </div>
           <h1 class="hero-title">
-            Xin chào, tôi là <br />
-            <span class="gradient-text">TânPro</span>
+            Bứt phá tiếng Anh <br />
+            <span class="gradient-text">Tự tin vươn ra thế giới</span>
           </h1>
           <p class="hero-description">
-            Nhà phát triển Web & Đam mê kiến tạo trải nghiệm người dùng hiện đại, 
-            tối ưu hiệu năng cao và giải pháp kỹ thuật toàn diện.
+            Phương pháp học phản xạ tự nhiên kết hợp công nghệ luyện phát âm AI. 
+            Xóa bỏ rào cản sợ nói, làm chủ 4 kỹ năng Nghe - Nói - Đọc - Viết trong 90 ngày.
           </p>
 
           <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">Xem Dự Án Của Tôi 🚀</a>
-            <a href="#contact" class="btn btn-secondary">Liên Hệ Ngay 💬</a>
+            <a href="#courses" class="btn btn-primary">Khám Phá Khóa Học 📚</a>
+            <a href="#quiz" class="btn btn-secondary">Làm Test Nhanh 🎯</a>
           </div>
 
           <div class="hero-stats">
             <div class="stat-item">
-              <h3>20+</h3>
-              <p>Dự án hoàn thành</p>
+              <h3>15,000+</h3>
+              <p>Học viên xuất sắc</p>
             </div>
             <div class="stat-item">
-              <h3>3+</h3>
-              <p>Năm kinh nghiệm</p>
+              <h3>8.5</h3>
+              <p>Điểm IELTS mục tiêu</p>
             </div>
             <div class="stat-item">
-              <h3>99%</h3>
-              <p>Hài lòng khách hàng</p>
+              <h3>98%</h3>
+              <p>Đạt chuẩn đầu ra</p>
             </div>
           </div>
         </div>
 
+        <!-- Interactive Hero Vocabulary Widget -->
         <div class="hero-visual">
-          <div class="avatar-wrapper">
-            <div class="avatar-placeholder">
-              <div class="avatar-icon">👨‍💻</div>
-              <h2 class="avatar-name">TânPro</h2>
-              <p class="avatar-role">Fullstack Developer</p>
+          <div class="vocab-card">
+            <span class="vocab-tag">💡 Từ vựng mỗi ngày (Word of the Day)</span>
+            <div class="vocab-word-row">
+              <h2 class="vocab-word" id="vocabWord">Eloquence</h2>
+              <button class="audio-btn" id="playAudioBtn" title="Nghe phát âm chuẩn">🔊</button>
             </div>
-          </div>
+            <p class="vocab-phonetic" id="vocabPhonetic">/ˈel.ə.kwəns/ • Danh từ (n)</p>
+            
+            <div class="vocab-meaning">
+              <p id="vocabMeaningText">Khả năng nói lưu loát, diễn đạt hùng hồn và truyền cảm hứng.</p>
+              <em id="vocabExampleText">Ví dụ: "His eloquence left a lasting impression on the listeners."</em>
+            </div>
 
-          <!-- Floating Badges -->
-          <div class="float-badge float-badge-1">
-            <div class="float-icon">💻</div>
-            <div class="float-text">
-              <h4>Clean Code</h4>
-              <p>Tối ưu & Chuẩn SEO</p>
-            </div>
-          </div>
-
-          <div class="float-badge float-badge-2">
-            <div class="float-icon">✨</div>
-            <div class="float-text">
-              <h4>Modern UI</h4>
-              <p>Thiết kế đột phá</p>
-            </div>
+            <button class="vocab-next-btn" id="nextVocabBtn">Học từ kế tiếp &rarr;</button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Services / Lĩnh vực -->
-    <section id="services">
+    <!-- Methods / Features Section -->
+    <section id="methods">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Thế mạnh</span>
-          <h2 class="section-title">Tôi Có Thể Giúp Gì Cho Bạn?</h2>
-          <p class="section-desc">Cung cấp giải pháp phần mềm toàn diện từ thiết kế giao diện đến phát triển hệ thống.</p>
+          <span class="section-tag">Phương pháp đào tạo</span>
+          <h2 class="section-title">Tại Sao Nên Chọn TanEnglish?</h2>
+          <p class="section-desc">Hệ thống giảng dạy tối ưu hóa theo chuẩn quốc tế, giúp người học ghi nhớ sâu và ứng dụng tức thì.</p>
         </div>
 
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">🌐</div>
-            <h3>Thiết Kế Web Hiện Đại</h3>
-            <p>Xây dựng giao diện responsive, mượt mà trên mọi thiết bị với chuẩn UI/UX và công nghệ mới nhất.</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🗣️</div>
+            <h3>Luyện Nói Phản Xạ Tự Nhiên</h3>
+            <p>Phương pháp Spaced Repetition kết hợp mô phỏng hội thoại thực tế giúp nói tiếng Anh lưu loát mà không cần dịch nhẩm trong đầu.</p>
           </div>
 
-          <div class="service-card">
-            <div class="service-icon">⚡</div>
-            <h3>Tối Ưu Tốc Độ & SEO</h3>
-            <p>Tối ưu hiệu năng load trang, cấu trúc chuẩn công cụ tìm kiếm giúp tiếp cận khách hàng tối đa.</p>
+          <div class="feature-card">
+            <div class="feature-icon">🎙️</div>
+            <h3>Chỉnh Phát Âm Chuẩn IPA</h3>
+            <p>Phân tích khẩu hình, ngữ điệu và trọng âm chuẩn giọng Anh - Mỹ, giúp bạn phát âm tự tin và chuẩn xác từng âm tiết.</p>
           </div>
 
-          <div class="service-card">
-            <div class="service-icon">🛠️</div>
-            <h3>Hệ Thống & API</h3>
-            <p>Xây dựng backend ổn định, bảo mật và kết nối mượt mà với các nền tảng cơ sở dữ liệu hiện đại.</p>
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Lộ Trình Cá Nhân Hóa</h3>
+            <p>Giáo án tinh gọn thiết kế riêng theo trình độ đầu vào và mục tiêu thực tế của học viên từ mất gốc đến nâng cao.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+    <!-- Courses Section -->
+    <section id="courses">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Sản phẩm tiêu biểu</span>
-          <h2 class="section-title">Dự Án Đã Thực Hiện</h2>
-          <p class="section-desc">Một số dự án và sản phẩm ấn tượng tôi đã từng xây dựng.</p>
+          <span class="section-tag">Lộ trình học tập</span>
+          <h2 class="section-title">Các Khóa Học Tiêu Biểu</h2>
+          <p class="section-desc">Chọn lộ trình phù hợp nhất để hiện thực hóa ước mơ học tập và công việc của bạn.</p>
         </div>
 
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-preview">
-              <span class="project-preview-icon">📱</span>
+        <div class="courses-grid">
+          <!-- Course 1 -->
+          <div class="course-card">
+            <div class="course-banner">
+              <span class="course-badge-level">Mọi Cấp Độ</span>
+              <span class="course-banner-icon">💬</span>
             </div>
-            <div class="project-content">
-              <div class="project-tags">
-                <span class="project-tag">HTML5/CSS3</span>
-                <span class="project-tag">JavaScript</span>
+            <div class="course-content">
+              <div class="course-meta">
+                <span>⏱️ 3 Tháng</span>
+                <span>⭐ 4.9/5.0</span>
               </div>
-              <h3>Nền Tảng Dashboard Quản Lý</h3>
-              <p>Hệ thống phân tích dữ liệu trực quan theo thời gian thực với biểu đồ tương tác cao cấp.</p>
-              <a href="#" class="project-link">Xem chi tiết &rarr;</a>
+              <h3>Tiếng Anh Giao Tiếp Thực Chiến</h3>
+              <p>Tự tin giao tiếp công việc, du lịch và đàm phán quốc tế với hơn 100+ tình huống thực tế đời sống hàng ngày.</p>
+              <div class="course-footer">
+                <span class="course-students">👥 5,200+ học viên</span>
+                <a href="#register" class="btn btn-secondary">Chi tiết</a>
+              </div>
             </div>
           </div>
 
-          <div class="project-card">
-            <div class="project-preview">
-              <span class="project-preview-icon">🛍️</span>
+          <!-- Course 2 -->
+          <div class="course-card">
+            <div class="course-banner" style="background: linear-gradient(135deg, #4f46e5 0%, #0f172a 100%);">
+              <span class="course-badge-level">Target 6.5 - 8.0+</span>
+              <span class="course-banner-icon">🎓</span>
             </div>
-            <div class="project-content">
-              <div class="project-tags">
-                <span class="project-tag">E-Commerce</span>
-                <span class="project-tag">Node.js</span>
+            <div class="course-content">
+              <div class="course-meta">
+                <span>⏱️ 4.5 Tháng</span>
+                <span>⭐ 5.0/5.0</span>
               </div>
-              <h3>Ứng Dụng Thương Mại Điện Tử</h3>
-              <p>Trải nghiệm mua sắm nhanh chóng, tích hợp cổng thanh toán trực tuyến và giỏ hàng thông minh.</p>
-              <a href="#" class="project-link">Xem chi tiết &rarr;</a>
+              <h3>Luyện Thi IELTS Chuyên Sâu</h3>
+              <p>Chiến thuật làm bài 4 kỹ năng Speaking, Writing, Reading, Listening. Chấm chữa bài 1-1 trực tiếp cùng giảng viên 8.5+.</p>
+              <div class="course-footer">
+                <span class="course-students">👥 6,800+ học viên</span>
+                <a href="#register" class="btn btn-secondary">Chi tiết</a>
+              </div>
             </div>
           </div>
 
-          <div class="project-card">
-            <div class="project-preview">
-              <span class="project-preview-icon">🚀</span>
+          <!-- Course 3 -->
+          <div class="course-card">
+            <div class="course-banner" style="background: linear-gradient(135deg, #059669 0%, #0f172a 100%);">
+              <span class="course-badge-level">Target 750+ TOEIC</span>
+              <span class="course-banner-icon">💼</span>
             </div>
-            <div class="project-content">
-              <div class="project-tags">
-                <span class="project-tag">Landing Page</span>
-                <span class="project-tag">Animation</span>
+            <div class="course-content">
+              <div class="course-meta">
+                <span>⏱️ 2.5 Tháng</span>
+                <span>⭐ 4.8/5.0</span>
               </div>
-              <h3>Landing Page Khởi Nghiệp</h3>
-              <p>Trang đích chuyển đổi cao cho startup công nghệ với hiệu ứng cuộn trang sống động.</p>
-              <a href="#" class="project-link">Xem chi tiết &rarr;</a>
+              <h3>TOEIC Doanh Nghiệp & Đi Làm</h3>
+              <p>Hệ thống mẹo bẫy đề thi mới nhất ETS, từ vựng chuyên ngành kinh tế, văn phòng và giao tiếp hội nghị.</p>
+              <div class="course-footer">
+                <span class="course-students">👥 3,400+ học viên</span>
+                <a href="#register" class="btn btn-secondary">Chi tiết</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Interactive Mini Test Section -->
+    <section id="quiz">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Thử thách trình độ</span>
+          <h2 class="section-title">Câu Hỏi Trắc Nghiệm Nhanh</h2>
+          <p class="section-desc">Kiểm tra ngay kiến thức ngữ pháp của bạn chỉ trong 10 giây!</p>
+        </div>
+
+        <div class="quiz-box">
+          <p class="quiz-question">
+            ❓ "She speaks English very _______ and can chat easily with native speakers."
+          </p>
+
+          <div class="quiz-options">
+            <button class="quiz-btn" data-correct="false">
+              <span>A. fluent</span>
+              <span>(Tính từ)</span>
+            </button>
+            <button class="quiz-btn" data-correct="true">
+              <span>B. fluently</span>
+              <span>(Trạng từ)</span>
+            </button>
+            <button class="quiz-btn" data-correct="false">
+              <span>C. fluency</span>
+              <span>(Danh từ)</span>
+            </button>
+            <button class="quiz-btn" data-correct="false">
+              <span>D. fluentness</span>
+              <span>(Không phổ biến)</span>
+            </button>
+          </div>
+
+          <div class="quiz-feedback" id="quizFeedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Breakdown -->
     <section id="skills">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Năng lực</span>
-          <h2 class="section-title">Kỹ Năng Kỹ Thuật</h2>
-          <p class="section-desc">Công nghệ và công cụ tôi sử dụng hàng ngày để tạo ra sản phẩm chất lượng.</p>
+          <span class="section-tag">Bộ kỹ năng cốt lõi</span>
+          <h2 class="section-title">Mục Tiêu Phát Triển Kỹ Năng</h2>
+          <p class="section-desc">Mức độ hoàn thiện 4 kỹ năng cốt lõi được đào tạo tại TanEnglish.</p>
         </div>
 
-        <div class="skills-container">
-          <div class="skill-box">
-            <div class="skill-info">
-              <span>Frontend (HTML, CSS, JS)</span>
+        <div class="stats-container">
+          <div class="stat-box">
+            <div class="stat-info">
+              <span>Listening (Nghe hiểu ngữ cảnh)</span>
               <span>95%</span>
             </div>
-            <div class="skill-bar">
-              <div class="skill-progress" data-percent="95"></div>
+            <div class="progress-bar-wrap">
+              <div class="progress-fill" data-percent="95"></div>
             </div>
           </div>
 
-          <div class="skill-box">
-            <div class="skill-info">
-              <span>UI/UX Design</span>
-              <span>85%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" data-percent="85"></div>
-            </div>
-          </div>
-
-          <div class="skill-box">
-            <div class="skill-info">
-              <span>Backend & Database</span>
-              <span>80%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" data-percent="80"></div>
-            </div>
-          </div>
-
-          <div class="skill-box">
-            <div class="skill-info">
-              <span>Performance Optimization</span>
+          <div class="stat-box">
+            <div class="stat-info">
+              <span>Speaking (Phát âm & Phản xạ)</span>
               <span>90%</span>
             </div>
-            <div class="skill-bar">
-              <div class="skill-progress" data-percent="90"></div>
+            <div class="progress-bar-wrap">
+              <div class="progress-fill" data-percent="90"></div>
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-info">
+              <span>Reading (Đọc hiểu tài liệu chuẩn)</span>
+              <span>88%</span>
+            </div>
+            <div class="progress-bar-wrap">
+              <div class="progress-fill" data-percent="88"></div>
+            </div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-info">
+              <span>Writing (Viết luận & Email học thuật)</span>
+              <span>85%</span>
+            </div>
+            <div class="progress-bar-wrap">
+              <div class="progress-fill" data-percent="85"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <!-- Register Form Section -->
+    <section id="register">
       <div class="container">
-        <div class="contact-card">
-          <div class="contact-info">
-            <span class="section-tag">Kết nối</span>
-            <h3>Hãy Bắt Đầu Một Dự Án Tuyệt Vời</h3>
+        <div class="register-card">
+          <div class="register-info">
+            <span class="section-tag">Ưu đãi hôm nay</span>
+            <h3>Đăng Ký Học Thử & Test Đầu Vào Miễn Phí</h3>
             <p>
-              Bạn có ý tưởng hay cần một website chuyên nghiệp? Hãy để lại tin nhắn, tôi sẽ phản hồi trong vòng 24 giờ!
+              Nhận ngay bài test đánh giá năng lực toàn diện cùng chuyên gia và lộ trình học tập tối ưu riêng biệt cho bạn.
             </p>
 
-            <div class="contact-item">
-              <div class="contact-icon">📧</div>
+            <div class="benefit-item">
+              <div class="benefit-icon">✓</div>
               <div>
-                <strong>Email</strong>
-                <p>contact@tanpro.dev</p>
+                <strong>Test trình độ 1-1 miễn phí</strong>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Đánh giá trực tiếp cùng giảng viên kinh nghiệm.</p>
               </div>
             </div>
 
-            <div class="contact-item">
-              <div class="contact-icon">📍</div>
+            <div class="benefit-item">
+              <div class="benefit-icon">✓</div>
               <div>
-                <strong>Địa điểm</strong>
-                <p>Việt Nam</p>
+                <strong>Tặng kho 500+ tài liệu độc quyền</strong>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Ebook từ vựng và mẹo thi Cambridge, ETS.</p>
               </div>
             </div>
           </div>
 
-          <form id="contactForm">
+          <form id="registerForm">
             <div class="form-group">
-              <label for="name">Họ và tên</label>
-              <input type="text" id="name" class="form-control" placeholder="Nguyễn Văn A" required />
+              <label for="fullName">Họ và tên của bạn</label>
+              <input type="text" id="fullName" class="form-control" placeholder="Ví dụ: Trần Văn Tân" required />
             </div>
 
             <div class="form-group">
-              <label for="email">Địa chỉ Email</label>
-              <input type="email" id="email" class="form-control" placeholder="name@example.com" required />
+              <label for="phone">Số điện thoại / Zalo</label>
+              <input type="tel" id="phone" class="form-control" placeholder="0987 654 321" required />
             </div>
 
             <div class="form-group">
-              <label for="message">Nội dung tin nhắn</label>
-              <textarea id="message" class="form-control" placeholder="Mô tả dự án hoặc lời nhắn của bạn..." required></textarea>
+              <label for="targetCourse">Khóa học bạn quan tâm</label>
+              <select id="targetCourse" class="form-control" required>
+                <option value="">-- Chọn khóa học --</option>
+                <option value="giaotiep">Tiếng Anh Giao Tiếp Thực Chiến</option>
+                <option value="ielts">Luyện Thi IELTS Chuyên Sâu (Target 6.5 - 8.0+)</option>
+                <option value="toeic">Luyện Thi TOEIC Đi Làm (Target 750+)</option>
+                <option value="matgoc">Khóa Lấy Lại Căn Bản Cho Người Mất Gốc</option>
+              </select>
             </div>
 
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Gửi Tin Nhắn 🚀</button>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Nhận Tư Vấn & Học Thử Ngay ✨</button>
           </form>
         </div>
       </div>
@@ -302,7 +358,7 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <p>&copy; 2026 TânPro. Đã đăng ký bản quyền. Được thiết kế với đam mê & công nghệ hiện đại.</p>
+        <p>&copy; 2026 TanEnglish Academy. Nền tảng tiếng Anh trực tuyến chuẩn quốc tế.</p>
       </div>
     </footer>
 
