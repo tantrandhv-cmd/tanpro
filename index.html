@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TânPro - Portfolio cá nhân của lập trình viên và nhà phát triển web sáng tạo." />
+    <title>TânPro | Fullstack Developer & Creator</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background Ambient Glow -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header>
+      <div class="container nav-container">
+        <a href="#home" class="logo">
+          <span>⚡ TânPro</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Trang chủ</a></li>
+          <li><a href="#services">Dịch vụ</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-primary">Hợp tác ngay</a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge">
+            <span class="badge-dot"></span> Sẵn sàng cho dự án mới
+          </div>
+          <h1 class="hero-title">
+            Xin chào, tôi là <br />
+            <span class="gradient-text">TânPro</span>
+          </h1>
+          <p class="hero-description">
+            Nhà phát triển Web & Đam mê kiến tạo trải nghiệm người dùng hiện đại, 
+            tối ưu hiệu năng cao và giải pháp kỹ thuật toàn diện.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Xem Dự Án Của Tôi 🚀</a>
+            <a href="#contact" class="btn btn-secondary">Liên Hệ Ngay 💬</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>20+</h3>
+              <p>Dự án hoàn thành</p>
+            </div>
+            <div class="stat-item">
+              <h3>3+</h3>
+              <p>Năm kinh nghiệm</p>
+            </div>
+            <div class="stat-item">
+              <h3>99%</h3>
+              <p>Hài lòng khách hàng</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-placeholder">
+              <div class="avatar-icon">👨‍💻</div>
+              <h2 class="avatar-name">TânPro</h2>
+              <p class="avatar-role">Fullstack Developer</p>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="float-badge float-badge-1">
+            <div class="float-icon">💻</div>
+            <div class="float-text">
+              <h4>Clean Code</h4>
+              <p>Tối ưu & Chuẩn SEO</p>
+            </div>
+          </div>
+
+          <div class="float-badge float-badge-2">
+            <div class="float-icon">✨</div>
+            <div class="float-text">
+              <h4>Modern UI</h4>
+              <p>Thiết kế đột phá</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / Lĩnh vực -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Thế mạnh</span>
+          <h2 class="section-title">Tôi Có Thể Giúp Gì Cho Bạn?</h2>
+          <p class="section-desc">Cung cấp giải pháp phần mềm toàn diện từ thiết kế giao diện đến phát triển hệ thống.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🌐</div>
+            <h3>Thiết Kế Web Hiện Đại</h3>
+            <p>Xây dựng giao diện responsive, mượt mà trên mọi thiết bị với chuẩn UI/UX và công nghệ mới nhất.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>Tối Ưu Tốc Độ & SEO</h3>
+            <p>Tối ưu hiệu năng load trang, cấu trúc chuẩn công cụ tìm kiếm giúp tiếp cận khách hàng tối đa.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🛠️</div>
+            <h3>Hệ Thống & API</h3>
+            <p>Xây dựng backend ổn định, bảo mật và kết nối mượt mà với các nền tảng cơ sở dữ liệu hiện đại.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Sản phẩm tiêu biểu</span>
+          <h2 class="section-title">Dự Án Đã Thực Hiện</h2>
+          <p class="section-desc">Một số dự án và sản phẩm ấn tượng tôi đã từng xây dựng.</p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-preview">
+              <span class="project-preview-icon">📱</span>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">HTML5/CSS3</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <h3>Nền Tảng Dashboard Quản Lý</h3>
+              <p>Hệ thống phân tích dữ liệu trực quan theo thời gian thực với biểu đồ tương tác cao cấp.</p>
+              <a href="#" class="project-link">Xem chi tiết &rarr;</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-preview">
+              <span class="project-preview-icon">🛍️</span>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">E-Commerce</span>
+                <span class="project-tag">Node.js</span>
+              </div>
+              <h3>Ứng Dụng Thương Mại Điện Tử</h3>
+              <p>Trải nghiệm mua sắm nhanh chóng, tích hợp cổng thanh toán trực tuyến và giỏ hàng thông minh.</p>
+              <a href="#" class="project-link">Xem chi tiết &rarr;</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-preview">
+              <span class="project-preview-icon">🚀</span>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">Landing Page</span>
+                <span class="project-tag">Animation</span>
+              </div>
+              <h3>Landing Page Khởi Nghiệp</h3>
+              <p>Trang đích chuyển đổi cao cho startup công nghệ với hiệu ứng cuộn trang sống động.</p>
+              <a href="#" class="project-link">Xem chi tiết &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Năng lực</span>
+          <h2 class="section-title">Kỹ Năng Kỹ Thuật</h2>
+          <p class="section-desc">Công nghệ và công cụ tôi sử dụng hàng ngày để tạo ra sản phẩm chất lượng.</p>
+        </div>
+
+        <div class="skills-container">
+          <div class="skill-box">
+            <div class="skill-info">
+              <span>Frontend (HTML, CSS, JS)</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-percent="95"></div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-info">
+              <span>UI/UX Design</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-percent="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-info">
+              <span>Backend & Database</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-percent="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-info">
+              <span>Performance Optimization</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-percent="90"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-info">
+            <span class="section-tag">Kết nối</span>
+            <h3>Hãy Bắt Đầu Một Dự Án Tuyệt Vời</h3>
+            <p>
+              Bạn có ý tưởng hay cần một website chuyên nghiệp? Hãy để lại tin nhắn, tôi sẽ phản hồi trong vòng 24 giờ!
+            </p>
+
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <strong>Email</strong>
+                <p>contact@tanpro.dev</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <strong>Địa điểm</strong>
+                <p>Việt Nam</p>
+              </div>
+            </div>
+          </div>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Họ và tên</label>
+              <input type="text" id="name" class="form-control" placeholder="Nguyễn Văn A" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Địa chỉ Email</label>
+              <input type="email" id="email" class="form-control" placeholder="name@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Nội dung tin nhắn</label>
+              <textarea id="message" class="form-control" placeholder="Mô tả dự án hoặc lời nhắn của bạn..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Gửi Tin Nhắn 🚀</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 TânPro. Đã đăng ký bản quyền. Được thiết kế với đam mê & công nghệ hiện đại.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
